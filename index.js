@@ -28,6 +28,7 @@ const io = new Server(server, {
 });
 
 let users = [];
+
 const addUser = (userId, socketId) => {
   !users.some((user) => user.userId === userId) &&
     users.push({ userId, socketId });
